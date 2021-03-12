@@ -48,7 +48,7 @@
                 <div class="font-size-lg text-accent pt-2 productTotalPrice">	<% if $CompletePrice.CaPrice %>ca. <% end_if %>$Top.formattedNumber($CompletePrice.Price) &euro;</div>
               </div>
             </div>
-            <div class="col-2 pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style="max-width: 9rem;">
+            <div class="col-2 pt-2 pt-sm-0 mx-auto mx-sm-0 text-center text-sm-left" style="max-width: 9rem;">
               <div class="form-group mb-0">
                  <label class="font-weight-medium" for="quantity1"><% if $PriceBlockElement.Portionable %>Menge in Gramm<% else %>Anzahl in Stück<% end_if %></label>
 						<div class="quantity position-relative clearfix d-inline-block align-top">
