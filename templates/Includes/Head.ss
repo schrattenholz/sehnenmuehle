@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
-	<meta name="keywords" content="<% if $Keywords %>$Keywords<% else %> Biolandhof Sehenmühle, Bioland, Rindfleisch, Schweinefeisch, Eier, Konserven, Hunsrück, regional<% end_if %>">
-	<meta property="og:description" content="">
+	<meta name="keywords" content="<% if $Keywords %>$Keywords<% else %> Biolandhof Sehnenmühle, Bioland, Rindfleisch, Schweinefeisch, Eier, Konserven, Hunsrück, regional<% end_if %>">
+	<meta property="og:description" content="$Content.RAW">
 	<link rel=”canonical” href=”https://biolandhof-sehnenmuehle.de/$URLSegment”/>
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="<% if $Link=="/home/" %>$BaseHref<% else %>$BaseHref$Link<% end_if %>">
 	<meta property="og:title" content="$MenuTitle.XML">
-	<% if $HasRevoSlider %>
-		<% loop $RevoLayers.Sort('SortID') %>
-		<meta property="og:image" content="$BaseHref$BackgroundImage.URL">		
+	<% if $Slides.Count>0 %>
+		<% loop $Slides.Sort('SortID') %>
+		<meta property="og:image" content="{$BaseHref}$BackgroundImage.URL">		
 		<% end_loop %>
 	<% else_if $Image %>
 		<meta property="og:image" content="$BaseHref$Image.URL">
