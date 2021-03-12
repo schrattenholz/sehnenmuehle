@@ -16,7 +16,7 @@
 		<meta property="og:image" content="{$BaseHref}$BackgroundImage.URL">
 		<% end_loop %>
 	<% else_if $CoverImage %>
-		<meta property="og:image" content="$BaseHref$CoverImage.URL">
+		<meta property="og:image" content="{$BaseHref}$CoverImage.URL">
 	<% else %>
 		<meta property="og:image" content="$BaseHref$ThemeDir/images/default.jpg">
 	<% end_if %>
