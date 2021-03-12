@@ -13,10 +13,10 @@
 	<meta property="og:title" content="$MenuTitle.XML">
 	<% if $Slides.Count>0 %>
 		<% loop $Slides.Sort('SortID') %>
-		<meta property="og:image" content="{$BaseHref}$BackgroundImage.URL">		
+		<meta property="og:image" content="{$BaseHref}$BackgroundImage.URL">
 		<% end_loop %>
 	<% else_if $CoverImage %>
-		<meta property="og:image" content="$BaseHref$Image.URL">
+		<meta property="og:image" content="$BaseHref$CoverImage.URL">
 	<% else %>
 		<meta property="og:image" content="$BaseHref$ThemeDir/images/default.jpg">
 	<% end_if %>
