@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
 	<meta name="keywords" content="<% if $Keywords %>$Keywords<% else %> Biolandhof Sehnenmühle, Bioland, Rindfleisch, Schweinefeisch, Eier, Konserven, Hunsrück, regional<% end_if %>">
-	<meta property="og:description" content="$Content.RAW">
+	<meta property="og:description" content="$Content.XML">
 	<link rel=”canonical” href=”https://biolandhof-sehnenmuehle.de/$URLSegment”/>
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="<% if $Link=="/home/" %>$BaseHref<% else %>$BaseHref$Link<% end_if %>">
