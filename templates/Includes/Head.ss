@@ -15,7 +15,7 @@
 		<% loop $Slides.Sort('SortID') %>
 		<meta property="og:image" content="{$BaseHref}$BackgroundImage.URL">		
 		<% end_loop %>
-	<% else_if $Image %>
+	<% else_if $CoverImage %>
 		<meta property="og:image" content="$BaseHref$Image.URL">
 	<% else %>
 		<meta property="og:image" content="$BaseHref$ThemeDir/images/default.jpg">
