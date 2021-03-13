@@ -62,7 +62,7 @@
 				  <div class="d-flex pt-4 mt-3">
 					<div class="w-50 pr-3"><a class="btn btn-secondary btn-block" href="$OrderConfig.Basket.Link"><i class="czi-arrow-left mt-sm-0 mr-1"></i><span class="d-none d-sm-inline">Zurück</span><span class="d-inline d-sm-none">Zurück</span></a></div>
 					<div class="w-50 pl-2">
-					<button type="submit" name="action_continue" value="Weiter zu den Lieferoptionen" class="action action btn btn-primary btn-shadow mb-2 mr-1 col-12" id="OrderProfileFeature_RegistrationForm_useraccounttab_action_continue">
+					<button type="submit" name="action_continue" value="Weiter zu den Lieferoptionen" class="action action btn btn-primary btn-shadow mb-2 mr-1 col-12" id="OrderProfileFeature_RegistrationForm_useraccounttab_action_continue_mobile">
 					<span class="d-none d-sm-inline">Weiter</span><span class="d-inline d-sm-none">Weiter</span><i class="czi-arrow-right mt-sm-0 ml-1"></i></a>
 							</button></div>
 				  </div>
