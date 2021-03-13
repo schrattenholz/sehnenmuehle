@@ -68,6 +68,7 @@
 				  </div>
 				</div>
 		</div>
+		<input type="hidden" id="CreateUserAccount_Val" name="CreateUserAccount_Val" />
 		</form>
 	</div>
 	
@@ -124,8 +125,10 @@ function loginMember(){
 function checkoutAddress(nextLink,pageLink){
 	var nextLink='$LinkCheckoutDelivery';
 	var pageLink='$Link';
-if(jQuery('#OrderProfileFeature_RegistrationForm_useraccounttab_CreateUserAccount').is(":checked")){
-	jQuery('#OrderProfileFeature_RegistrationForm_useraccounttab_CreateUserAccount').val("1");
+if(jQuery('#CreateUserAccount').is(":checked")){
+	jQuery('#CreateUserAccount_Val').val(1);
+}else{
+jQuery('#CreateUserAccount_Val').val(0);
 }
 	jQuery('input').each(function(){
 		$(this).removeAttr('disabled');
