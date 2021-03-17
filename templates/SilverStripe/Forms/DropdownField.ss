@@ -1,4 +1,4 @@
-<select $AttributesHTML>
+<select  id="$id"  name="$name" <% if $required %>required="required" required<% end_if %> <% if $getAttribute('readonly')=="readonly" %>readonly="readonly" readonly<% end_if %> class="form-control" type="<% if $type="text password" %>password<% else %>$type<% end_if %>">
 <% loop $Options %>
 	<option value="$Value.XML"
 		<% if $Selected %> selected="selected"<% end_if %>

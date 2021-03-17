@@ -120,7 +120,7 @@
 				</div>
 				<div class="col-md-6">
 					<label for="City">Ort*</label>
-					<input class="form-control" type="text" id="City" name="City" placeholder="" required>
+					<select class="form-control" type="dropdown" id="City" name="City"  required><option value="">Bitte PLZ eingeben</option></select>
 					<div class="invalid-feedback">Bitte gib deinen Wohnort an.</div>
 				</div>
               </div>
