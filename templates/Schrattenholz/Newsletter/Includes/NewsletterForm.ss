@@ -12,7 +12,7 @@
 	</div>
 	<div id="Form_AnmeldeformularNewsletter_NewsletterConfirmation_Holder" class="custom-control custom-checkbox checkbox" wfd-id="53">
 		<input id="Form_AnmeldeformularNewsletter_NewsletterConfirmation" name="NewsletterConfirmation" type="checkbox" class="custom-control-input" wfd-id="408" required="required">
-		<label class="custom-control-label text-primary" for="Form_AnmeldeformularNewsletter_NewsletterConfirmation" wfd-id="54">Ich m&ouml;chte das mich der $SiteConfig.Title &uuml;ber Neuigkeiten rund um den Hof und seine Produkte informiert. </label>
+		<label class="custom-control-label text-primary" for="Form_AnmeldeformularNewsletter_NewsletterConfirmation" wfd-id="54">Ich m&ouml;chte, dass mich der $SiteConfig.Title &uuml;ber Neuigkeiten rund um den Hof und seine Produkte informiert. </label>
 	</div>
 	<div id="Form_AnmeldeformularNewsletter_DSGVO_Holder" class="custom-control custom-checkbox checkbox" wfd-id="53">
 		<input id="Form_AnmeldeformularNewsletter_DSGVO" name="DSGVO" type="checkbox"  class="custom-control-input" wfd-id="408" required="required">

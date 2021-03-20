@@ -82,7 +82,7 @@
 							type="text" 
 							data-portionable="$loadSelectedParameters(0).ProductDetails.Portionable"
 							min="<% if $loadSelectedParameters(0).ProductDetails.Portionable %>$loadSelectedParameters(0).ProductDetails.PortionMin<% else %>0<% end_if %>" 
-							max="<% if $loadSelectedParameters(0).ProductDetails.Portionable %>$loadSelectedParameters(0).ProductDetails.PortionMax<% else %>$loadSelectedParameters(0).ClientsQuantityMax<% end_if %>" 
+							max="<% if $loadSelectedParameters(0).ProductDetails.Portionable %>$loadSelectedParameters(0).ProductDetails.PortionMax<% else %><% if $loadSelectedParameters(0).ProductDetails.InfiniteInventory %>99999999<% else %>$loadSelectedParameters(0).ClientsQuantityMax<% end_if %><% end_if %>" 
 							step="<% if $loadSelectedParameters(0).ProductDetails.Portionable %>$loadSelectedParameters(0).ProductDetails.Portion<% else %>1<% end_if %>"
 							readonly="readonly"
 							value="<% if $loadSelectedParameters(0).Quantity>0 %><% if $loadSelectedParameters(0).ProductDetails.Portionable %>$Top.formattedWeight($loadSelectedParameters(0).Quantity)<% else %>$loadSelectedParameters(0).Quantity<% end_if %><% else %><% if $loadSelectedParameters(0).ProductDetails.Portionable %>{$loadSelectedParameters(0).ProductDetails.PortionMin}g<% else %>0<% end_if %><% end_if %>">

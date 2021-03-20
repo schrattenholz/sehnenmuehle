@@ -1,12 +1,14 @@
- 			  <a class="navbar-tool-icon-box bg-secondary dropdown-toggle" href="$OrderConfig.Basket.Link" id="warenkorb_icon">
-				  <span class="navbar-tool-label basket-count">$ListCount</span>
-				  <i class="navbar-tool-icon czi-cart"></i>
-			  </a>
- <a class="navbar-tool-text <% if not $Basket.ProductContainers %> d-none <% end_if %>" href="$OrderConfig.Basket.Link" style="min-width: 90px;"><small>Warenkorb</small>
-			 <% if $Basket.ProductContainers %>
-				<% if $Basket.TotalPrice.CaPrice %>ca. <% end_if %>
-				$Top.formattedNumber($Basket.TotalPrice.Price) &euro;</a>
-			<% end_if %>
+<a class="navbar-tool-icon-box bg-secondary dropdown-toggle" href="$OrderConfig.Basket.Link" id="warenkorb_icon">
+	<span class="navbar-tool-label basket-count">$ListCount</span>
+	<i class="navbar-tool-icon czi-cart"></i>
+</a>
+<a class="navbar-tool-text <% if not $Basket.ProductContainers %> d-none <% end_if %>" href="$OrderConfig.Basket.Link" style="min-width: 90px;">
+	<small>Warenkorb</small>
+	 <% if $Basket.ProductContainers %>
+		<% if $Basket.TotalPrice.CaPrice %>ca. <% end_if %>
+		$Top.formattedNumber($Basket.TotalPrice.Price) &euro;
+	<% end_if %>
+</a>
                 <!-- Cart dropdown-->
                 <div class="dropdown-menu dropdown-menu-right" style="width: 20rem;">
             

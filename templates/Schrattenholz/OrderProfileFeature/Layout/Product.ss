@@ -63,7 +63,7 @@
             </div>
 			
                         <!-- Product details-->
-			<div class="col-lg-5 pt-4 pt-lg-0">
+			<div class="col-lg-5 pt-4 pt-lg-4">
 				<div class="product-details ml-auto pb-3">
 
 					<div classs="mb-3">
