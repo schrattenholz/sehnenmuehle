@@ -243,7 +243,7 @@ function checkoutDelivery(nextLink,pageLink){
 		console.log("checkoutAddress="+data);
 			if(status=='error'){
 					$('.messageBox .alert').html(message);
-					$('.messageBox .alert').addClass('alert-danger').css('display','block').fadeTo(100,1).delay(3000).fadeTo(100,0,function(){$(this).removeClass('alert-danger');$(this).css('display','none');});
+					$('.messageBox .alert').addClass('alert-danger').css('display','block').fadeTo(100,1).delay(5000).fadeTo(100,0,function(){$(this).removeClass('alert-danger');$(this).css('display','none');});
 	
 			}else{
 				if(status=='info' || status=='warning'){
