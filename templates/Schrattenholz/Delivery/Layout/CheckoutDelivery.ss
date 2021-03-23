@@ -25,36 +25,49 @@
 
 					  <% loop $DeliverySetup %>
                       <div class="form-group delivery <% if $Top.Basket.DeliveryType.Type="delivery" %><% else %>d-none<% end_if %>">
-					<% if $getCity($Top.CurrentOrderCustomerGroup.ID,$Top.CheckoutAdress.ZIP,$Top.CheckoutAdress.City) %>
+										<% if $getCity($Top.CurrentOrderCustomerGroup.ID,$Top.CheckoutAdress.ZIP,$Top.CheckoutAdress.City) %>
                         <select class="form-control custom-select" name="Delivery" id="Delivery" disabled>
-				   
-					<% if $Top.Basket.RouteID %>
-					<option value="" data-city="$Top.CheckoutAdress.City" data-zip="$Top.CheckoutAdress.ZIP">$Top.CheckoutAdress.City</option>
-					<% else %>
-					<option value="" data-city="" data-zip="">Wählen Sie Ihren Ort</option>
-						<% loop $getCities($Top.CurrentOrderCustomerGroup.ID).Sort('Title') %>
-							$Title
-						  <% if $Routes && $Routes.First.getNextDeliveryDates($Top.CurrentOrderCustomerGroup.ID,$Top.DeliverySetup.ID) %>
-							<option value="$ID" data-city="$Title" 
-							  data-routes="<% loop $Routes %>$Title<% if $Last %><% else %>,<% end_if %><% end_loop %>" 
-							  data-deliverydate="<% loop $Routes %>$getNextDeliveryDates($Top.CurrentOrderCustomerGroup.ID,$Top.DeliverySetup.ID)<% if $Last %><% else %>,<% end_if %><% end_loop %>" 
-							  data-deliveryroute="<% loop $Routes %>$ID<% if $Last %><% else %>,<% end_if %><% end_loop %>"
-							  data-arrivaltime="<% loop $Routes %>$Up.ArrivalTime<% if $Last %><% else %>,<% end_if %><% end_loop %>" 
-							  data-zip="<% loop $Delivery_ZIPCodes %>$Title<% if $Last %><% else %>,<% end_if %><% end_loop %>"
-							>
+	   
+						<% if $Top.Basket.RouteID %>
+							<option value="" data-city="$Top.CheckoutAdress.City" data-zip="$Top.CheckoutAdress.ZIP">$Top.CheckoutAdress.City</option>
+						<% else %>
+							<option value="" data-city="" data-zip="">Wählen Sie Ihren Ort</option>
+							<% loop $getCities($Top.CurrentOrderCustomerGroup.ID).Sort('Title') %>
+			 
+																																														 
+																	 
+																																													   
+																																																																																												  
+																																															  
+																																																				   
+																																																	 
+		
 								$Title
-							</option>
-									
-						  <% end_if %>
-						<% end_loop %>
+								<% if $Routes && $Routes.First.getNextDeliveryDates($Top.CurrentOrderCustomerGroup.ID,$Top.DeliverySetup.ID) %>
+									<option value="$ID" data-city="$Title" 
+										  data-routes="<% loop $Routes %>$Title<% if $Last %><% else %>,<% end_if %><% end_loop %>" 
+										  data-deliverydate="<% loop $Routes %>$getNextDeliveryDates($Top.CurrentOrderCustomerGroup.ID,$Top.DeliverySetup.ID)<% if $Last %><% else %>,<% end_if %><% end_loop %>" 
+										  data-deliveryroute="<% loop $Routes %>$ID<% if $Last %><% else %>,<% end_if %><% end_loop %>"
+										  data-arrivaltime="<% loop $Routes %>$Up.ArrivalTime<% if $Last %><% else %>,<% end_if %><% end_loop %>" 
+										  data-zip="<% loop $Delivery_ZIPCodes %>$Title<% if $Last %><% else %>,<% end_if %><% end_loop %>"
+										>
+											$Title
+									</option>
+								<% end_if %>
+							<% end_loop %>
 						<% end_if %>	
-						
-						
+	  
+	  
                         </select>
 						<% else %>
-							<p>Leider findet nach $Top.CheckoutAdress.City zur Zeit keine Lieferung statt.</p>
-							<p>Sie möchten, dass Ihr Ort in eine unsere Lieferrouten aufgenommen wird?
-							Sprechen Sie uns an. Vielleicht k&ouml;nnen wir es einrichten. </p>
+						<div class="alert" role="alert">
+
+    <i class="text-danger czi-truck"></i>
+
+							<h6 class="text-danger">Keine Lieferung möglich.</h6></p class="text-dark">Leider findet nach $Top.CheckoutAdress.City zur Zeit keine Lieferung statt.<br/>Du möchtest, dass Dein Ort in eine unserer Lieferrouten aufgenommen wird?
+																																				 
+							Sprich uns an. Vielleicht k&ouml;nnen wir es einrichten. </p>
+							</div>
 						<% end_if %>
 						<input type="hidden" id="deliveryDate" name="DeliveryDate" <% if $Top.Basket.ShippingDate %>value="$Top.Basket.ShippingDate"<% end_if %> />
                         <input type="hidden" id="deliveryRoute" name="DeliveryRoute" <% if $Top.Basket.RouteID %>value="$Top.Basket.RouteID"<% end_if %> />
