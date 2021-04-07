@@ -1,12 +1,12 @@
 			<!-- Steps-->
 			<div class="steps steps-light pt-2 pb-3 mb-5">
-			<a class="step-item <% if $ID==$OrderConfig.CheckoutSummary.ID || $ID==$OrderConfig.CheckoutFinal.ID || $ID==$OrderConfig.CheckoutAdress.ID %>active<% end_if %> <% if $ID==$OrderConfig.Basket.ID %>active current<% end_if %>" href="$OrderConfig.Basket.Link">
+			<a class="step-item <% if $ID==$OrderConfig.CheckoutSummary.ID || $ID==$OrderConfig.CheckoutFinal.ID || $ID==$OrderConfig.CheckoutAddress.ID %>active<% end_if %> <% if $ID==$OrderConfig.Basket.ID %>active current<% end_if %>" href="$OrderConfig.Basket.Link">
 				<div class="step-progress"><span class="step-count">1</span></div>
 				<div class="step-label"><i class="czi-cart"></i>$OrderConfig.Basket.MenuTitle.XML</div>
 			</a>
-			<a class="step-item  <% if $ID==$OrderConfig.CheckoutSummary.ID || $ID==$OrderConfig.CheckoutFinal.ID %>active<% end_if %><% if $ID==$OrderConfig.CheckoutAdress.ID %>active current<% end_if %>" href="$OrderConfig.CheckoutAdress.Link">
+			<a class="step-item  <% if $ID==$OrderConfig.CheckoutSummary.ID || $ID==$OrderConfig.CheckoutFinal.ID %>active<% end_if %><% if $ID==$OrderConfig.CheckoutAddress.ID %>active current<% end_if %>" href="$OrderConfig.CheckoutAddress.Link">
 				<div class="step-progress"><span class="step-count">2</span></div>
-				<div class="step-label"><i class="czi-user-circle"></i>$OrderConfig.CheckoutAdress.MenuTitle.XML</div>
+				<div class="step-label"><i class="czi-user-circle"></i>$OrderConfig.CheckoutAddress.MenuTitle.XML</div>
 			</a>
 			<a class="step-item <% if $ID==$OrderConfig.CheckoutFinal.ID %>active<% end_if %> <% if $ID==$OrderConfig.CheckoutSummary.ID %>active current<% end_if %>" href="$OrderConfig.CheckoutSummary.Link">
 				<div class="step-progress"><span class="step-count">3</span></div>

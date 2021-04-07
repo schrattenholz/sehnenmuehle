@@ -9,7 +9,7 @@
 				  <div class="card-body text-center">
 					<h2 class="h4 pb-3">Vielen Dank f&uuml;r Deine Bestellung.</h2>
 					<p class="font-size-sm mb-2">Deine Bestellung ist bei uns eingegangen und wird so schnell wie möglich bearbeitet.</p>
-					<p class="font-size-sm mb-2">Du erhälst in K&uuml;rze eine Bestellbest&auml;tigung an die von Dir angegebene E-Mail-Adresse <span class='font-weight-medium'>{$CheckoutAdress.Email}.</span></p>
+					<p class="font-size-sm mb-2">Du erhälst in K&uuml;rze eine Bestellbest&auml;tigung an die von Dir angegebene E-Mail-Adresse <span class='font-weight-medium'>{$CheckoutAddress.Email}.</span></p>
 				  </div>
 				</div>
 			  </div>
