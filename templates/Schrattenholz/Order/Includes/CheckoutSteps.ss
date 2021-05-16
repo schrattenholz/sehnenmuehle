@@ -1,6 +1,6 @@
 <!-- Steps-->
 <div class="steps steps-light pt-2 pb-3 mb-5">
-	<a class="step-item <% if $ID==$OrderConfig.CheckoutSummary.ID || $ID==$OrderConfig.CheckoutFinal.ID || $ID==$OrderConfig.CheckoutAdress.ID %>active<% end_if %> <% if $ID==$OrderConfig.Basket.ID %>active current<% end_if %>" >
+	<a class="step-item <% if $ID==$OrderConfig.CheckoutSummary.ID || $ID==$OrderConfig.CheckoutFinal.ID || $ID==$OrderConfig.CheckoutAddress.ID %>active<% end_if %> <% if $ID==$OrderConfig.Basket.ID %>active current<% end_if %>" >
 		<div class="step-progress"><span class="step-count">1</span></div>
 		<div class="step-label"><i class="czi-cart"></i>$OrderConfig.Basket.MenuTitle.XML</div>
 	</a>

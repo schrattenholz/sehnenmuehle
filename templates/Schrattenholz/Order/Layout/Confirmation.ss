@@ -87,10 +87,10 @@ folgende Bestellung ist soeben eingegangen:
 				</tr>
 			  </thead>
 				<tbody>
-					<tr><td class="noBorder">Firmenname:</td><td>$CheckoutAdress.Company</td></tr>
-					<tr><td class="noBorder">Strasse:</td><td class="noBorder">$CheckoutAdress.Street</td></tr>
-					<tr><td class="noBorder">PLZ:</td><td class="noBorder">$CheckoutAdress.ZIP</td></tr>
-					<tr><td class="noBorder">Ort:</td><td class="noBorder">$CheckoutAdress.City</td></tr>
+					<tr><td class="noBorder">Firmenname:</td><td>$CheckoutAddress.Company</td></tr>
+					<tr><td class="noBorder">Strasse:</td><td class="noBorder">$CheckoutAddress.Street</td></tr>
+					<tr><td class="noBorder">PLZ:</td><td class="noBorder">$CheckoutAddress.ZIP</td></tr>
+					<tr><td class="noBorder">Ort:</td><td class="noBorder">$CheckoutAddress.City</td></tr>
 				</tbody>
 			</table>
           </div>
@@ -104,10 +104,10 @@ folgende Bestellung ist soeben eingegangen:
 				</tr>
 			  </thead>
 				<tbody>
-					<tr><td width="20%">Vorname:</td><td width="80%">$CheckoutAdress.FirstName</td></tr>
-					<tr><td class="noBorder">Nachname:</td><td class="noBorder">$CheckoutAdress.Surname</td></tr>
-					<tr><td class="noBorder">Telefon:</td><td class="noBorder">$CheckoutAdress.PhoneNumber</td></tr>
-					<tr><td class="noBorder">Email:</td><td class="noBorder">$CheckoutAdress.Email</td></tr>
+					<tr><td width="20%">Vorname:</td><td width="80%">$CheckoutAddress.FirstName</td></tr>
+					<tr><td class="noBorder">Nachname:</td><td class="noBorder">$CheckoutAddress.Surname</td></tr>
+					<tr><td class="noBorder">Telefon:</td><td class="noBorder">$CheckoutAddress.PhoneNumber</td></tr>
+					<tr><td class="noBorder">Email:</td><td class="noBorder">$CheckoutAddress.Email</td></tr>
 				</tbody>
 			</table>
 		</div>
