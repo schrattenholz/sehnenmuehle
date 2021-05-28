@@ -13,7 +13,7 @@
 <% if $CurrentMember %>
 <div id="SAVE_SEPA_Holder" class="field text  form-group" wfd-id="109">
 	<div class="custom-control custom-checkbox">
-		<input class="custom-control-input" type="checkbox" id="SAVE_SEPA" name="SAVE_SEPA">
+		<input class="custom-control-input" type="checkbox" id="SAVE_SEPA" name="SAVE_SEPA" <% if $SAVE_SEPA %>checked="checked"<% end_if %>>
 		<label class="custom-control-label" for="SAVE_SEPA">Diese Kontoverbindung f&uumlr zuk&uuml;ftige Eink&auml;ufe in meinem Benutzerkonto hinterlegen.
 	</div>
 </div>
