@@ -24,4 +24,3 @@
 		<label class="custom-control-label" for="SEPA_Confirmation">Ich stimme zu, dass der Biolandhof Sehnenm&uuml;hle den Rechnungsbetrag per Lastschriftmandat von meinem Konto einzieht.
 	</div>
 </div>
-ca=$IBAN

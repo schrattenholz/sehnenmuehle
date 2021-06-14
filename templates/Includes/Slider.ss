@@ -8,7 +8,7 @@
             <div class="position-relative mx-auto mr-lg-n5 py-5 px-4 mb-lg-5 order-lg-1" style="max-width: 42rem; z-index: 10;">
               <div class="pb-lg-5 mb-lg-5 text-center text-lg-left text-lg-nowrap">
                 <h2 class="font-weight-light pb-1 from-left">$SecondRow</h2>
-                <h1 class="display-4 from-left delay-1"><span>$Title</span></h1>
+                <h1 class="display-4 from-left delay-1"><% if $Title %><span>$Title</span><% end_if %></h1>
                 <p class="font-size-lg pb-3 from-left delay-2">$ThirdRow</p>
 				<% if $ActionText %>
 				<a class="btn btn-primary scale-up delay-4" href="$ActionLink.Link">$ActionText <i class="czi-arrow-right ml-2 mr-n1"></i></a>
