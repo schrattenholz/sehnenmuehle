@@ -19,7 +19,7 @@
 			<div class="col-md-4 col-sm-6 mb-3">
 			<div class="card border-0">
 			<a class="d-block overflow-hidden rounded-lg" href="shop-grid-ls.html">
-				<img class="card-img" src="$CoverImage.Fill(400,266).URL" alt="$CoverImage.Filename">
+				<img class="card-img" src="$DefaultImage.Fill(400,266).URL" alt="$DefaultImage.Filename">
 			</a>
 				<div class="card-body">
 				<h2 class="h5">$MenuTitle.XML</h2>
