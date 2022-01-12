@@ -117,8 +117,10 @@
                 
                 <ul class="list-unstyled font-size-sm">
                   <li class="text-center text-md-left"><strong>$Basket.PaymentMethod.Title</strong></li>
+				  <% if $Basket.PaymentMethod.Template=="Schrattenholz\Payment\Templates\PaymentMethod_SEPA" %>
 				  <li class="text-center text-md-left"><strong>IBAN:</strong> $CheckoutAddress.IBAN_Hint</li>
 				  <li class="text-center text-md-left"><strong>BIC:</strong> $CheckoutAddress.BIC_Hint</li>
+				  <% end_if %>
                 </ul>
           </div>
 		 <% else %>
