@@ -17255,7 +17255,7 @@ h3, h4, h5, h6 {
   position: absolute;
   width: 100%;
   content: "";
-  background: url("../img/wave_white.svg") no-repeat 0 0;
+  background: url("../img/test.svg") no-repeat 0 0;
   background-size: cover;
   margin-top: calc( -3rem - 30px);
   height: 30px;
