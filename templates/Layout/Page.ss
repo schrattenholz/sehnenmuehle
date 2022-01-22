@@ -24,7 +24,7 @@
 
    <!-- Banners-->
    <% if $Content || $Form %>
-<div class="<% if $HeaderImage %>spacer-white<% end_if %> bg-white py-5">
+<div class="<% if $MainImage %>spacer-white<% end_if %> bg-white py-5">
     <section class="container pb-4 mb-md-3 mt-2 mt-sm-5">
       <div class="row">
         <div class="col-md-8 mb-4">
