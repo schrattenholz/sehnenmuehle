@@ -23,6 +23,9 @@
                   </ul>
 				  <% end_if %>
                 </li>
+				<% else_if $Children && $HideChildrenInMainNav %>
+				<li class="nav-item <% if $isCurrent || $isSection %>active<% end_if %>"><a class="nav-link <% if $First %>pl-0 <% end_if %>" href="<% if $URLSegment=="home" || $URLSegment=="" %>{$BaseHref}home/<% else %>$Link<% end_if %>" title="$Title.XML">$MenuTitle.XML</a></li>
+				
 				<% else %>
 					 <li class="nav-item <% if $isCurrent || $isSection %>active<% end_if %>"><a class="nav-link <% if $First %>pl-0 <% end_if %>" href="<% if $URLSegment=="home" || $URLSegment=="" %>{$BaseHref}home/<% else %>$Link<% end_if %>" title="$Title.XML">$MenuTitle.XML</a></li>
 				<% end_if %>
