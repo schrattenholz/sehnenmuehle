@@ -13,7 +13,7 @@
 </div>
     <!-- Page Content-->
 	
-<div class="container" id="p_$ID" data-productid="$ID" data-producttitle="$Title>
+<div class="container" id="p_$ID" data-productid="$ID" data-producttitle="$Title">
       <!-- Gallery + details-->
       <div class="bg-white box-shadow-lg rounded-lg px-4 py-3 mb-5">
         <div class="px-lg-3">
