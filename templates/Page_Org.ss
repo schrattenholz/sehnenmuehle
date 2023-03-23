@@ -36,6 +36,6 @@ $Layout
 <% require themedJavascript('vendor.min') %>
 <% require themedJavascript('theme.min') %>
 <% include Javascript %>
-<% include OrderIncludes %>
+<% include Schrattenholz\Order\Includes\OrderIncludes %>
 </body>
 </html>
